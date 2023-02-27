@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import burritoImg from "../images/burrito-bowl.jpg";
+import Side from "./Side";
 
-function Order(props) {
+function Order({props, state}) {
   const [isClicked, setIsClicked] = useState(false);
 
   function handleClick() {
-    isClicked = !isClicked;
+    setIsClicked(!isClicked);
   }
 
   return (
